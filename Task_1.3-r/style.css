@@ -120,10 +120,14 @@ header {
   padding: 0;
   background-color: #fff;
 }
+.menu--first {
+  display: flex;
+}
 .header__button-icon--burger {
   background-image: url(img/icon/burger.svg);
   width: 40px;
   height: 40px;
+  margin-right: 16.73px;
 }
 .header__divider--first {
   display: none;
@@ -133,19 +137,26 @@ header {
   width: 96.55px;
   height: 51px;
 }
-.header__communication {
+.menu--second {
   display: none;
 }
-.header__divider--second {
+.menu--third {
+  display: flex;
+}
+.header__divider--second::before {
+  content: '';
   background-image: url(img/icon/divider.svg);
   display: block;
   width: 2px;
   height: 32px;
+  margin-right: 20px;
+  margin-top: 2px;
 }
 .header__button-icon--repair {
   background-image: url(img/icon/repair.svg);
   width: 40px;
   height: 40px;
+  margin-right: 16px;
 }
 .header__button-icon--checkstatus {
   background-image: url(img/icon/checkstatus.svg);
@@ -323,65 +334,47 @@ header {
 }
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   .header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  .menu--second {
+    display: block;
+    position: absolute;
+    left: 452px;
   }
   .header__button-icon--burger {
-    position: relative;
-    left: 10px;
+    margin-right: 20px;
   }
   .header__divider--first {
+    display: block;
+  }
+  .header__divider--first::before {
+    content: '';
     background-image: url(img/icon/divider.svg);
-    display: inline;
-    position: absolute;
+    display: block;
     width: 2px;
     height: 32px;
-    left: 84px;
-  }
-  .header__logo {
-    position: absolute;
-    left: 106.73px;
+    margin-right: 20px;
+    margin-top: 6px;
   }
   .header__button-icon--call {
     background-image: url(img/icon/768px/call.svg);
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 454px;
   }
   .header__button-icon--chat {
     background-image: url(img/icon/768px/chat.svg);
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 510px;
+    margin-left: 16px;
   }
   .header__button-icon--profile {
     background-image: url(img/icon/768px/profile.svg);
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 566px;
-  }
-  .header__communication {
-    display: block;
-  }
-  .header__divider--second {
-    display: inline-block;
-    position: absolute;
-    left: 626px;
-  }
-  .header__button-icon--repair {
-    position: absolute;
-    left: 648px;
-  }
-  .header__button-icon--checkstatus {
-    position: absolute;
-    right: 24px;
+    margin-left: 16px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1119px) {
