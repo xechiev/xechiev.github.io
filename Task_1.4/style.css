@@ -155,7 +155,7 @@ header {
   flex-direction: column;
   text-decoration: none;
 }
-.navigation-bar__item:hover {
+.navigation-bar__item:not(:first-of-type):hover {
   transform: scale(1.1, 1.1);
   color: tomato;
   font-size: 18px;
