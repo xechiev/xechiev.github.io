@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html {
+  overflow: hidden;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("fonts/TTLakes/TTLakes-Regular.eot");
+  src: url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("fonts/TTLakes/TTLakes-Medium.eot");
+  src: url("fonts/TTLakes/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("fonts/TTLakes/TTLakes-Bold.eot");
+  src: url("fonts/TTLakes/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "TT Lakes Medium";
+  max-width: 320px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(16, 0, 52, 0.2);
+}
+header {
+  margin-bottom: 32px;
+}
+.header__menu--mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu--mobile-first {
+  display: flex;
+  align-items: center;
+  padding: 19px 0;
+}
+.button-icon {
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+.button-icon:hover {
+  transform: scale(1.5, 1.5);
+}
+.header__button-icon--burger {
+  background-image: url(img/burger.svg);
+  margin-left: 24px;
+}
+.header__logo {
+  background-image: url(img/logo.svg);
+  width: 97px;
+  height: 51px;
+}
+.header__button-icon--search {
+  background-image: url(img/search.svg);
+  margin-right: 24px;
+}
+.menu__navigation-bar {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.navigation-bar__item:hover {
+  transform: scale(1.1, 1.1);
+  color: tomato;
+  font-size: 18px;
+}
+.navigation-bar__item {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2 px;
+  line-height: 24px;
+  color: #1b1c21;
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+.navigation-bar__item--active {
+  color: #7e7e82;
+}
+.menu__navigation-bar:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-image: url(img/highlight.svg);
+  top: 116px;
+}
+footer {
+  margin: 268px 0 32px 24px;
+}
+.footer__button-icon--call {
+  background-image: url(img/call.svg);
+}
+.footer__button-icon--chat {
+  background-image: url(img/chat.svg);
+}
+.footer__button-icon--profile {
+  background-image: url(img/profile.svg);
+}
+.contacts__mail {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  color: #1b1c21;
+  font-size: 16px;
+  width: 106px;
+  height: 24px;
+}
+.contacts__phone {
+  display: block;
+  margin-bottom: 40px;
+  color: #1b1c21;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer__toggle-languages {
+  display: inline-block;
+  margin-right: 7px;
+}
+.footer__toggle {
+  border: none;
+  background: none;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.toggle-languages--ru-active {
+  color: #7e7e82;
+}
