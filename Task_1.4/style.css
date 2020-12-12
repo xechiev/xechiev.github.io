@@ -108,7 +108,7 @@ html {
 body {
   font-family: "TT Lakes Medium";
   max-width: 320px;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
   background: #fff;
   box-shadow: 4px 4px 8px 0px rgba(16, 0, 52, 0.2);
