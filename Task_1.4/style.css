@@ -136,6 +136,8 @@ header {
 }
 .button-icon:hover {
   transform: scale(1.5, 1.5);
+  transition-duration: .4s;
+  filter:hue-rotate(90deg);
 }
 .header__button-icon--burger {
   background-image: url(img/burger.svg);
@@ -157,7 +159,8 @@ header {
 }
 .navigation-bar__item:not(:first-of-type):hover {
   transform: scale(1.1, 1.1);
-  color: tomato;
+  transition-duration: .4s;
+  color: olive;
   font-size: 18px;
 }
 .navigation-bar__item {
