@@ -159,6 +159,7 @@ header {
   transform: scale(1.1, 1.1);
   color: tomato;
   font-size: 18px;
+  transition: all 0.1s linear;
 }
 .navigation-bar__item {
   font-size: 16px;
