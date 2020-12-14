@@ -325,7 +325,7 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
-  .img-1 {
+  .background-image {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin: 16px 0;
@@ -446,7 +446,7 @@ header {
   .section__read-more--active {
     margin-left: 52px;
   }
-  .img-1 {
+  .background-image {
     margin-top: 16px;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -564,7 +564,7 @@ header {
   .section__read-more--active {
     margin-left: 65px;
   }
-  .img-1 {
+  .background-image {
     margin-top: 16px;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
