@@ -6,7 +6,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -109,20 +108,30 @@ body {
   font-family: "TT Lakes Medium";
   max-width: 320px;
   height: 100vh;
-  overflow: hidden;
   background: #fff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(16, 0, 52, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(16, 0, 52, 0.2);
 }
 header {
   margin-bottom: 32px;
 }
 .header__menu--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-.header__menu--mobile-first {
+.mobile-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 19px 0;
 }
@@ -135,11 +144,11 @@ header {
   margin-right: 16px;
 }
 .button-icon:hover {
-  transform: scale(1.5, 1.5);
-  transition-duration: .4s;
-  filter:hue-rotate(90deg);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
-.header__button-icon--burger {
+.header__button-icon-burger {
   background-image: url(img/burger.svg);
   margin-left: 24px;
 }
@@ -148,32 +157,46 @@ header {
   width: 97px;
   height: 51px;
 }
-.header__button-icon--search {
+.header__button-icon-search {
   background-image: url(img/search.svg);
   margin-right: 24px;
 }
 .menu__navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-decoration: none;
 }
-.navigation-bar__item:not(:first-of-type):hover {
+/* .menu__item:not(:first-of-type):hover {
   transform: scale(1.1, 1.1);
-  transition-duration: .4s;
-  color: olive;
   font-size: 18px;
+  color: red;
+  
+} */
+.menu__item {
+  margin-bottom: 32px;
+  margin-left: 24px;
 }
-.navigation-bar__item {
+.menu__link {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.2 px;
   line-height: 24px;
   color: #1b1c21;
-  margin-bottom: 32px;
-  margin-left: 24px;
 }
-.navigation-bar__item--active {
-  color: #7e7e82;
+.menu__link:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  font-size: 18px;
+  color: tomato;
+}
+.menu__link--active {
+  pointer-events: none;
 }
 .menu__navigation-bar:first-of-type::before {
   content: "";
@@ -184,18 +207,18 @@ header {
   top: 116px;
 }
 footer {
-  margin: 134px 0 32px 24px;
+  margin: 268px 0 32px 24px;
 }
-.footer__button-icon--call {
+.footer__button-icon-call {
   background-image: url(img/call.svg);
 }
-.footer__button-icon--chat {
+.footer__button-icon-chat {
   background-image: url(img/chat.svg);
 }
-.footer__button-icon--profile {
+.footer__button-icon-profile {
   background-image: url(img/profile.svg);
 }
-.contacts__mail {
+.footer__mail {
   display: block;
   margin-top: 16px;
   margin-bottom: 12px;
@@ -204,7 +227,7 @@ footer {
   width: 106px;
   height: 24px;
 }
-.contacts__phone {
+.footer__phone {
   display: block;
   margin-bottom: 40px;
   color: #1b1c21;
@@ -225,6 +248,6 @@ footer {
   line-height: 24px;
   text-transform: uppercase;
 }
-.toggle-languages--ru-active {
+.toggle-languages-active {
   color: #7e7e82;
 }
