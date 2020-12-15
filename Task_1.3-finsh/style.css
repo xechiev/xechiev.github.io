@@ -247,7 +247,7 @@ header {
   white-space: nowrap;
   padding: 8px 9.3px 8px 16px;
 }
-.navigation-bar:hover {
+.navigation-bar__item:hover {
   border-radius: 6px;
   border: 2px solid #b8ffec;
   padding: 6px 0px;
