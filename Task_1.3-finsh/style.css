@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -227,9 +228,16 @@ header {
   width: 0;
 }
 .navigation-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navigation-bar__list .navigation-bar__item:first-child {
   border-radius: 6px;
@@ -316,15 +324,23 @@ header {
     padding-right: 0;
     margin-right: 24px;
     margin-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__menu--second {
     display: block;
   }
   .header__menu--rigth {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__button-icon--burger {
     margin-right: 20px;
@@ -379,12 +395,22 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .section__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section__paragraph {
     min-width: 312px;
@@ -482,7 +508,8 @@ header {
     margin-top: 9px;
   }
   .navigation-bar__list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .navigation-bar__link:first-of-type {
     margin-left: 0px;
