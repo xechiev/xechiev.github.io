@@ -121,7 +121,7 @@ header {
   padding: 0;
   background-color: #fff;
 }
-.header__menu--first {
+.header__menu-first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,10 +137,10 @@ header {
   width: 96.55px;
   height: 51px;
 }
-.header__menu--second {
+.header__menu-second {
   display: none;
 }
-.header__menu--third {
+.header__menu-third {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +331,7 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header__menu--second {
+  .header__menu-second {
     display: block;
   }
   .header__menu--rigth {
