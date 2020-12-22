@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -222,9 +223,16 @@ header {
   width: 0;
 }
 .navigation-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   white-space: nowrap;
   margin: 0 16px;
 }
@@ -262,6 +270,19 @@ header {
   right: 0%;
   top: 29.48%;
   bottom: 63.82%;
+
+  background: -webkit-gradient(
+    linear,
+    right top, left top,
+    color-stop(16.84%, #f8f8f8),
+    to(rgba(248, 248, 248, 0.0001))
+  );
+
+  background: -o-linear-gradient(
+    right,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
 
   background: linear-gradient(
     270deg,
@@ -311,7 +332,9 @@ header {
   background-image: url(img/icon/expand.svg);
   color: #41f6d7;
   display: inline-block;
-  transform: translate(-8px, 5px);
+  -webkit-transform: translate(-8px, 5px);
+      -ms-transform: translate(-8px, 5px);
+          transform: translate(-8px, 5px);
 }
 .section__read-more-active:hover {
   color: tomato;
@@ -331,15 +354,23 @@ header {
     padding-right: 0;
     margin-right: 24px;
     margin-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__contacts {
     display: block;
   }
   .header__contacts-restore {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__button-icon--burger {
     margin-right: 20px;
@@ -390,6 +421,19 @@ header {
     top: 32%;
     bottom: 55.56%;
 
+    background: -webkit-gradient(
+      linear,
+      right top, left top,
+      color-stop(16.84%, #f8f8f8),
+      to(rgba(248, 248, 248, 0.0001))
+    );
+
+    background: -o-linear-gradient(
+      right,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+
     background: linear-gradient(
       270deg,
       #f8f8f8 16.84%,
@@ -404,12 +448,22 @@ header {
 }
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .section__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section__paragraph {
     min-width: 312px;
@@ -499,7 +553,8 @@ header {
 }
 @media screen and (min-width: 1120px) {
   .navigation-bar__list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .navigation-bar__item--active {
     margin-left: 16px;
