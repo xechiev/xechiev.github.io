@@ -214,13 +214,13 @@ footer {
   height: 185px;
   margin-left: 23px;
 }
-.footer__button-icon--call {
+.button-icon--call {
   background-image: url(img/call.svg);
 }
-.footer__button-icon--chat {
+.button-icon--chat {
   background-image: url(img/chat.svg);
 }
-.footer__button-icon--profile {
+.button-icon--profile {
   background-image: url(img/profile.svg);
 }
 .footer__mail {
