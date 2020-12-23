@@ -172,12 +172,6 @@ header {
   flex-direction: column;
   text-decoration: none;
 }
-/* .menu__item:not(:first-of-type):hover {
-  transform: scale(1.1, 1.1);
-  font-size: 18px;
-  color: red;
-  
-} */
 .menu__item {
   margin-bottom: 32px;
   margin-left: 24px;
@@ -192,21 +186,20 @@ header {
 .menu__link:hover {
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1) ;
   font-size: 18px;
   color: tomato;
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
-.menu__link--active {
-  pointer-events: none;
-}
-.menu__navigation-bar:first-of-type::before {
+.menu__link--active::before {
   content: "";
   position: absolute;
   width: 4px;
   height: 32px;
-  background-image: url(img/highlight.svg);
   top: 116px;
+  background-image: url(img/highlight.svg);
+  pointer-events: none;
+  margin-left: -24px;
 }
 footer {
   margin: 268px 0 32px 24px;
