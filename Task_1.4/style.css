@@ -204,7 +204,10 @@ header {
   margin-left: -24px;
 }
 footer {
-
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  
   margin: 40% 0 32px 24px;
 }
 .footer__button-icon--call {
