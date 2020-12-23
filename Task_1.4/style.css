@@ -105,6 +105,8 @@ html {
   font-size: 16px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "TT Lakes Medium";
   max-width: 320px;
   height: 100vh;
@@ -202,15 +204,16 @@ header {
   margin-left: -24px;
 }
 footer {
-  margin: 268px 0 32px 24px;
+
+  margin: 40% 0 32px 24px;
 }
-.footer__button-icon-call {
+.footer__button-icon--call {
   background-image: url(img/call.svg);
 }
-.footer__button-icon-chat {
+.footer__button-icon--chat {
   background-image: url(img/chat.svg);
 }
-.footer__button-icon-profile {
+.footer__button-icon--profile {
   background-image: url(img/profile.svg);
 }
 .footer__mail {
@@ -230,11 +233,11 @@ footer {
   font-weight: 700;
   font-size: 24px;
 }
-.footer__toggle-languages {
+.languages {
   display: inline-block;
   margin-right: 7px;
 }
-.footer__toggle {
+.toggle-languages {
   border: none;
   background: none;
   color: #1b1c21;
@@ -243,6 +246,6 @@ footer {
   line-height: 24px;
   text-transform: uppercase;
 }
-.toggle-languages-active {
+.toggle-languages--active {
   color: #7e7e82;
 }
