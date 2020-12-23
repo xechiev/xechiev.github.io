@@ -25,6 +25,7 @@ aside {
 }
 html {
   overflow: hidden;
+
 }
 html,
 body {
@@ -174,6 +175,9 @@ header {
   flex-direction: column;
   text-decoration: none;
 }
+.menu {
+  padding-bottom: 250px;
+}
 .menu__item {
   margin-bottom: 32px;
   margin-left: 24px;
@@ -193,9 +197,6 @@ header {
   color: tomato;
   transition: all 0.3s linear;
 }
-.menu__link--active {
-  pointer-events: none;
-}
 .menu__link--active::before {
   content: "";
   position: absolute;
@@ -210,8 +211,8 @@ footer {
   position: absolute;
   bottom: 0%;
   width: 100%;
-  
-  margin: 40% 0 32px 24px;
+  height: 200px;
+  margin-left: 23px;
 }
 .footer__button-icon--call {
   background-image: url(img/call.svg);
