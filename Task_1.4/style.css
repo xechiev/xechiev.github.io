@@ -117,6 +117,7 @@ body {
 }
 header {
   margin-bottom: 32px;
+  flex: 0 0 auto;
 }
 .header__menu--mobile {
   display: -webkit-box;
@@ -176,7 +177,7 @@ header {
   text-decoration: none;
 }
 .menu {
-  padding-bottom: 250px;
+  flex: 1 0 auto;
 }
 .menu__item {
   margin-bottom: 32px;
@@ -208,17 +209,18 @@ header {
   margin-left: -24px;
 }
 footer {
-  margin-top: auto;
+  flex-shrink: 0;
+  margin-left: 24px;
   margin-bottom: 30px;
-  margin-left: 24px;;
+ 
 }
-.button-icon--call {
+.footer__button-icon--call {
   background-image: url(img/call.svg);
 }
-.button-icon--chat {
+.footer__button-icon--chat {
   background-image: url(img/chat.svg);
 }
-.button-icon--profile {
+.footer__button-icon--profile {
   background-image: url(img/profile.svg);
 }
 .footer__mail {
@@ -232,7 +234,7 @@ footer {
 }
 .footer__phone {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   color: #1b1c21;
   font-style: bold;
   font-weight: 700;
@@ -240,7 +242,6 @@ footer {
 }
 .languages {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .toggle-languages {
@@ -251,6 +252,7 @@ footer {
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
+  padding-right: 8px;
 }
 .toggle-languages--active {
   color: #7e7e82;
