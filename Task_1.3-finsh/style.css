@@ -215,12 +215,6 @@ header {
   overflow-x: scroll;
   width: 100%;
 }
-.navigation-bar {
-  scrollbar-width: none;
-}
-.navigation-bar::-webkit-scrollbar {
-  width: 0;
-}
 .navigation-bar__list {
   display: flex;
   flex-direction: row;
