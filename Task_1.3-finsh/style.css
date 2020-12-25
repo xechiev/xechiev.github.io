@@ -508,6 +508,12 @@ header {
   .navigation-bar__item--active {
     margin-left: 16px;
   }
+  .navigation-bar {
+  scrollbar-width: none;
+  }
+  .navigation-bar::-webkit-scrollbar {
+  width: 0;
+  }
 }
 @media screen and (min-width: 1120px) {
   .section {
