@@ -198,6 +198,9 @@ header {
   color: tomato;
   transition: all 0.3s linear;
 }
+.menu__link--active {
+  pointer-events: none;
+}
 .menu__link--active::before {
   content: "";
   position: absolute;
