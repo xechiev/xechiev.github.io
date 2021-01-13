@@ -1,0 +1,310 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html {
+  overflow: hidden;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("fonts/TTLakes/TTLakes-Regular.eot");
+  src: url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("fonts/TTLakes/TTLakes-Medium.eot");
+  src: url("fonts/TTLakes/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("fonts/TTLakes/TTLakes-Bold.eot");
+  src: url("fonts/TTLakes/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "TT Lakes Medium";
+  height: 100vh;
+  background-color: #f2f2f2;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+header {
+  min-width: 320px;
+  max-height: 80px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f8f8f8), to(#ffffff));
+  background-image: -o-linear-gradient(left, #f8f8f8, #ffffff);
+  background-image: linear-gradient(90deg, #f8f8f8, #ffffff);
+}
+header::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  color: #d9fff5;
+}
+.header__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  padding: 16px 32px;
+}
+main {
+  background: #f2f2f2;
+}
+.brand-slider__slide {
+  margin: 0px 16px 8px 16px;
+  max-width: 240px;
+
+}
+.swiper-slide__button {
+  background-image: url(img/go.svg);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  margin-right: 16px;
+}
+.brand-slider__wrapper {
+  padding: 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.swiper-slide__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 72px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+.swiper-slide__logo {
+  padding: 0 16px;
+}
+.brand-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #dddddd;
+}
+.brand-button {
+  margin-left: 63px;
+}
+.brand-button__image {
+  -webkit-transform: translate(-30px, -5px);
+      -ms-transform: translate(-30px, -5px);
+          transform: translate(-30px, -5px);
+}
+.hidden {
+  display: none;
+}
+.expand {
+  display: block;
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 24px;
+  height: 24px;
+  background-image: url(img/expand.svg);
+  -webkit-transform: translate(35px, -4px);
+      -ms-transform: translate(35px, -4px);
+          transform: translate(35px, -4px);
+ }
+ input:checked {
+  background-image: url(img/expandUp.svg);
+  }
+@media screen and (max-width: 320px) {
+  .swiper-slide__button::after {
+    content: "";
+    position: absolute;
+    right: -65px;
+    top: -10px;
+    width: 24px;
+    height: 81px;
+    background: -webkit-gradient(
+      linear,
+      right top, left top,
+      color-stop(20%, #f8f8f8),
+      to(rgba(248, 248, 248, 0.0001))
+    ) no-repeat;
+    background: -o-linear-gradient(
+      right,
+      #f8f8f8 20%,
+      rgba(248, 248, 248, 0.0001) 100%
+    ) no-repeat;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 20%,
+      rgba(248, 248, 248, 0.0001) 100%
+    ) no-repeat;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .brand-button {
+    display: none;
+  }
+  .header__title {
+    padding: 16px 16px;
+  }
+  .brand-slider__slide {
+    margin: 8px 8px 16px 4px;
+  }
+  .brand-slider__wrapper {
+    padding-top: 12px;
+  }
+  .expand {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  body {
+    width: 768px;
+  }
+  .header__title {
+    padding: 16px 24px;
+  }
+  .brand-slider__slide {
+    margin: 0px 16px 8px 10px;
+  }
+  .brand-slider__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 24px 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .brand-slider__slide {
+    max-width: 224px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .brand-button__image {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(img/expand.svg);
+    -webkit-transform: translate(-30px, -5px);
+        -ms-transform: translate(-30px, -5px);
+            transform: translate(-30px, -5px)
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brand-slider__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__title {
+    padding: 16px 32px;
+  }
+  ul > li:nth-child(7),
+  ul > li:nth-child(8) {
+    display: block;
+  }
+}
