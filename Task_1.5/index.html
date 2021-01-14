@@ -15,7 +15,8 @@
     </header>
     <main>
         <nav class="swiper">
-            <div class="brand-slider swiper-container" data-mobile="false">
+            <div class="brand-slider swiper-container" data-mobile="false"> 
+                <input type="checkbox" class="expand" id="expand-show">
                 <ul class="brand-slider__wrapper swiper-wrapper">
                     <li class="brand-slider__slide swiper-slide">
                         <label class="swiper-slide__label">
@@ -96,8 +97,8 @@
                     </li> 
                 </ul> 
                 <div class="swiper-pagination"></div>
-            </div>
-                <input type="checkbox" class="expand"><button class="brand-button" type="button">Показать все</button>    
+                <label class="read-more" for="expand-show"></label>
+            </div>            
         </nav>
     </main>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
