@@ -272,11 +272,11 @@ main {
   .read-more::after {
     content: 'Показать все';
     padding-left: 26px;
-    background: url(/img/expand.svg) no-repeat 0 -2px;
+    background: url(img/expand.svg) no-repeat 0 -2px;
   }
   .expand:checked ~ .read-more::after {
     content: 'Скрыть';
-    background: url(/img/expandUp.svg) no-repeat 0 -2px;
+    background: url(img/expandUp.svg) no-repeat 0 -2px;
   }
   .header__title {
     padding: 16px 50px;
