@@ -190,7 +190,7 @@ main {
   .swiper-slide__button::after {
     content: "";
     position: absolute;
-    right: -70px;
+    right: -60px;
     top: -10px;
     width: 24px;
     height: 81px;
