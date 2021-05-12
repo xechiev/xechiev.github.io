@@ -1,52 +1,46 @@
 export class Search {
-    constructor(layout, api) {
-      this.layout = layout;
-      this.api = api;
-      
-      this.layout.input.addEventListener('keyup', this.debounce(this.searchRepositoriess.bind(this), 500));
+  constructor(layout, api) {
+    this.layout = layout;
+    this.api = api;
+    
+    this.layout.input.addEventListener('keyup', this.debounce(this.searchRepositoriess.bind(this), 500));
+  }
+
+  searchRepositoriess() {
+    let inputValue = this.layout.input.value;
+    if(inputValue) {
+      this.api.loadAccounts(inputValue).then(res => this.updatedAccounts(res))
+    } else {
+      this.clearAccounts();
     }
-  
-    searchRepositoriess() {
-      if(this.layout.input.value) {
-        this.api.loadAccounts(this.layout.input.value).then(response => this.updatedAccounts(response))
+  }
+
+  updatedAccounts(res) {
+      if(res.ok) {
+         this.clearAccounts(); 
+          res.json().then(res => {
+              if(res.items) {
+                  res.items.forEach(acc => this.layout.createAccounts(acc));
+              } else {
+                  this.clearAccounts();
+              }
+          })
       } else {
-        this.clearAccounts();
+          console.log('Возникла ошибка: ' + res.status)
       }
-    }
-
-    updatedAccounts(res, isUpdate = false) {
-        let accounts;
-        if(res.ok) {
-            if(!isUpdate) {
-               this.clearAccounts(); 
-            }
-            res.json().then(res => {
-                if(res.items) {
-                    accounts = res.items
-                    accounts.forEach(acc => this.layout.createAccounts(acc));
-                } else {
-                    this.clearAccounts();
-                }
-            })
-        } else {
-            console.log('Возникла ошибка :' + response.status)
-        }
-    }
+  }
 
 
-    clearAccounts() {
-      this.layout.box_1.innerHTML = ''; 
+  clearAccounts() {
+    this.layout.box_1.innerHTML = ''; 
+  };
+
+  debounce = (fn, ms) => {
+    let timeout;
+    return function () {
+      const fnCall = () => { fn.apply(this, arguments) }
+      clearTimeout(timeout);
+      timeout = setTimeout(fnCall, ms)
     };
-  
-    debounce = (fn, ms) => {
-      let timeout;
-      return function () {
-        const fnCall = () => { fn.apply(this, arguments) }
-        clearTimeout(timeout);
-        timeout = setTimeout(fnCall, ms)
-      };
-    }
+  }
 };
-  
-  
-  
